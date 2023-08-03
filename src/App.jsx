@@ -1,15 +1,12 @@
 import { useState } from 'react'
+import ContactList from './components/contactlist.jsx'
 import './App.css'
 
-function App() {
+export default function App() {
 
   return (
     <>
-      <div>
-      
-      </div>
+        <ContactList />
     </>
   )
 }
-
-export default App
