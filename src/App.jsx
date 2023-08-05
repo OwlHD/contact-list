@@ -4,15 +4,16 @@ import SelectedContact from './components/SelectedContact.jsx'
 import './App.css'
 
 export default function App() {
-
-  const [selectedContactId, setSelectedContactId] = useState(null)
+//the id
+  const [selectedContactId, setSelectedContactId] = useState(null);
+ // console.log(selectedContactId, 'from app')
 
   return (
     <>
       {selectedContactId ? (
-        <div>Selected Contact View</div>
+        <SelectedContact selectedContactId={selectedContactId} setSelectedContactId={setSelectedContactId} />
       ) : (
-        <ContactList setSelectedContactId={setSelectedContactId}/>
+        <ContactList setSelectedContactId={setSelectedContactId} />
       )}
     </>
   )

@@ -1,6 +1,7 @@
 export default function ContactRow({ setSelectedContactId, contact }) {
+    //console.log(contact)
     return (
-        <tr
+        <tr id="selectable"
         onClick={() => {
           setSelectedContactId(contact.id);
         }}
